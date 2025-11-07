@@ -1,0 +1,66 @@
+# -------------------------
+# Global
+# -------------------------
+*.log
+*.user
+*.suo
+*.tmp
+*.db
+*.DS_Store
+Thumbs.db
+
+# Ignore IDE folders
+.vscode/
+.vs/
+.idea/
+
+# -------------------------
+# .NET (API)
+# -------------------------
+API/bin/
+API/obj/
+API/Debug/
+API/Release/
+API/.vs/
+
+# ASP.NET scaffolding
+API/wwwroot/lib/
+API/Properties/launchSettings.json
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+*.dll
+*.exe
+
+# Configuration files (optional – remove if required in repo)
+appsettings.Development.json
+appsettings.Local.json
+
+# -------------------------
+# Angular (Web)
+# -------------------------
+Web/node_modules/
+Web/dist/
+Web/.angular/cache/
+Web/.angular/
+Web/.idea/
+Web/.vscode/
+
+# Angular build artifacts
+Web/**/*.js.map
+
+# Environment files (optional sensitive data)
+Web/src/environments/environment.ts
+Web/src/environments/environment.development.ts
+
+# -------------------------
+# OS-specific files
+# -------------------------
+# Windows
+ehthumbs.db
+
+# Mac
+.AppleDouble
+.LSOverride
