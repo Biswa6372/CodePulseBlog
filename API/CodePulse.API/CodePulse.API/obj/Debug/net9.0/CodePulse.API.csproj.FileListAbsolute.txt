@@ -161,3 +161,4 @@ C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\De
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\CodePulse.API.pdb
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\CodePulse.API.genruntimeconfig.cache
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\ref\CodePulse.API.dll
+C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\CodePulse.API.sourcelink.json
