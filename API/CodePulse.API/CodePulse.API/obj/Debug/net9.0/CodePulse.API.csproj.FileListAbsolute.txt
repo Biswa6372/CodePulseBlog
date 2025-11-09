@@ -146,6 +146,7 @@ C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\De
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\CodePulse.API.csproj.CoreCompileInputs.cache
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\CodePulse.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\CodePulse.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\CodePulse.API.sourcelink.json
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
@@ -161,4 +162,3 @@ C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\De
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\CodePulse.API.pdb
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\CodePulse.API.genruntimeconfig.cache
 C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\ref\CodePulse.API.dll
-C:\Users\Subham Prusty\Projects\CodePulse\API\CodePulse.API\CodePulse.API\obj\Debug\net9.0\CodePulse.API.sourcelink.json

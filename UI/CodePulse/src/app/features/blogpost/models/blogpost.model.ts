@@ -11,6 +11,17 @@ export interface AddBlogPostRequest {
     isVisible: boolean;
     categories: string[];
 }
+export interface UpdateBlogPostRequest {
+    title: string;
+    shortDescription: string;
+    content: string;
+    featuredImageUrl: string;
+    urlHandle: string;
+    publishedDate: Date;
+    author: string;
+    isVisible: boolean;
+    categories: string[];
+}
 
 export interface BlogPost {
     id: string;
@@ -19,7 +30,7 @@ export interface BlogPost {
     content: string;
     featuredImageUrl: string;
     urlHandle: string;
-    publishedDate: Date;
+    publishedDate: string;
     author: string;
     isVisible: boolean;
     categories: Category[];

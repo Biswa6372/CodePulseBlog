@@ -20,6 +20,7 @@
                             <th>Short Description</th>
                             <th>isVisible</th>
                             <th>Categories</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,6 +33,9 @@
                                     @for(category of blogPost.categories; track category.id) {
                                         <span class="badge text-bg-secondary">{{category.name}}</span>
                                     }
+                                </td>
+                                <td>
+                                    <a class="btn btn-light" [routerLink]="['/admin/blogposts/edit', blogPost.id]">Edit</a>
                                 </td>
                             </tr>
                         }
