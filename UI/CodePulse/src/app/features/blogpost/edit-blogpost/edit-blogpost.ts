@@ -96,7 +96,7 @@ export class EditBlogpost {
         this.router.navigate(['/admin/blogposts']);
       },
       error: (error) => {
-        console.error('Error updating blog post:', error);
+        console.error(`Error updating blog post for this id ${id}:`, error);
       }
     });
     }
