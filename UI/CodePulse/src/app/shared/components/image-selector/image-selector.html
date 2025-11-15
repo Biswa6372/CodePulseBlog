@@ -10,7 +10,20 @@
     <div class="card-body">
         <div class="d-flex flex-md-row flex-sm-column flex-wrap">
             <div class="col-8 p-4">
-
+                @if(isLoading())
+                {
+                   <p>Loading...</p>
+                }
+                @else {
+                    <div class="d-flex flex-wrap overflow-auto" style="max-height: calc(100vh - 300px);">
+                        @for (image of images(); track image.id) {
+                            <div class="d-flex flex-column align-items-center p-4" role="button" (click)="onSelectImage(image)">
+                                <img [src]="image.url" [alt]="image.title" style="height: 100px;">
+                                <span>{{image.title}}</span>
+                            </div>
+                        }
+                    </div>
+                }
             </div>
             <div class="col-4 p-4 bg-light">
                 <h5>Upload Image</h5>

@@ -10,7 +10,7 @@ import { ImageSelectorService } from '../../../shared/services/image-selector-se
 
 @Component({
   selector: 'app-edit-blogpost',
-  imports: [ReactiveFormsModule,MarkdownComponent,ImageSelector],
+  imports: [ReactiveFormsModule,MarkdownComponent],
   templateUrl: './edit-blogpost.html',
   styleUrl: './edit-blogpost.css',
 })
@@ -76,6 +76,15 @@ export class EditBlogpost {
     })
     }
     
+  })
+
+  selectedImageEffectRef = effect(() =>{
+    const selectedImageUrl= this.imageSelectorService.selectedImage();
+    if(selectedImageUrl){
+      this.editBlogPostForm.patchValue({
+        featuredImageUrl : selectedImageUrl
+      })
+    } 
   })
 
   onSubmit(): void {
