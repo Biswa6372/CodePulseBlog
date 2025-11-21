@@ -17,8 +17,7 @@ namespace CodePulse.API.Data
             var readerRoleId = "0f8fad5b-d9cb-469f-a165-70867728950e";
             var writerRoleId = "b32a6c89-1f4e-4d2b-9c7a-e5f81034d9b1";
 
-            //Create Reader And Writer Roles
-
+            // Create Reader And Writer Roles
             var roles = new List<IdentityRole>
             {
                 new IdentityRole()
@@ -37,7 +36,7 @@ namespace CodePulse.API.Data
                 }
             };
 
-            //Seed Roles
+            // Seed Roles
             builder.Entity<IdentityRole>().HasData(roles);
 
             // Create Admin User
@@ -48,15 +47,18 @@ namespace CodePulse.API.Data
                 UserName = "admin@codepulse.com",
                 Email = "admin@codepulse.com",
                 NormalizedEmail = "admin@codepulse.com".ToUpper(),
-                NormalizedUserName = "admin@codepulse.com".ToUpper()
-            };
+                NormalizedUserName = "admin@codepulse.com".ToUpper(),
+                PasswordHash = "AQAAAAIAAYagAAAAEAINpqjYpi1dN+tdgY142eEGse7S4eXpmAMp5vzl+swF77ZIi9/UpBfrtqApfJNtbQ==",
 
-            admin.PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(admin, "Admin@123");
+                // FIX ADDED HERE:
+                // These values must match what is in your 'InitialMigrationForAuth.cs' file
+                SecurityStamp = "2106a3bf-988c-45c5-a2eb-c846b11b6c1a",
+                ConcurrencyStamp = "2dfe0c43-7150-4317-a3fd-97e47ca5d2e0"
+            };
 
             builder.Entity<IdentityUser>().HasData(admin);
 
             // Give Roles To Admin
-
             var adminRoles = new List<IdentityUserRole<string>>()
             {
                 new()

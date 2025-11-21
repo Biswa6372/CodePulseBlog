@@ -31,6 +31,7 @@ builder.Services.AddDbContext<AuthDbContext>(options =>
 builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
 builder.Services.AddScoped<IBlogPostRepository,BlogPostRepository>();
 builder.Services.AddScoped<IImageRepository,ImageRepository>();
+builder.Services.AddScoped<ITokenRepository,TokenRepository>();
 
 builder.Services.AddIdentityCore<IdentityUser>()
     .AddRoles<IdentityRole>()
@@ -44,7 +45,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequireLowercase = false;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireUppercase = false;
-    options.Password.RequiredLength = 10;
+    options.Password.RequiredLength = 5;
     options.Password.RequiredUniqueChars = 1;
 });
 
