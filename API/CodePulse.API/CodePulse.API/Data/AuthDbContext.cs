@@ -48,6 +48,7 @@ namespace CodePulse.API.Data
                 Email = "admin@codepulse.com",
                 NormalizedEmail = "admin@codepulse.com".ToUpper(),
                 NormalizedUserName = "admin@codepulse.com".ToUpper(),
+                //Admin@123
                 PasswordHash = "AQAAAAIAAYagAAAAEAINpqjYpi1dN+tdgY142eEGse7S4eXpmAMp5vzl+swF77ZIi9/UpBfrtqApfJNtbQ==",
 
                 // FIX ADDED HERE:

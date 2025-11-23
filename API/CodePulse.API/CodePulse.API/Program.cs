@@ -79,7 +79,8 @@ app.UseCors(options =>
 {
     options.AllowAnyHeader();
     options.AllowAnyMethod();
-    options.AllowAnyOrigin();
+    options.WithOrigins("https://localhost:4200", "http://localhost:4200");
+    options.AllowCredentials();
 });
 app.UseAuthentication();
 app.UseAuthorization();
