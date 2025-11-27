@@ -21,7 +21,7 @@ export class App {
     const userValue = this.user();
 
     if(userValue){
-      this.authService.user.set(userValue);
+      this.authService.setUser(userValue);
     }
   })
 }

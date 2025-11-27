@@ -31,8 +31,8 @@ export class AuthService {
     },{
       withCredentials: true
     }).pipe(
-      tap((userResponse) => this.user.set(userResponse))
-    )
+      tap((userResponse) => this.setUser(userResponse))
+    );
   }
 
   logout(){
@@ -41,9 +41,21 @@ export class AuthService {
       withCredentials:true
     }).subscribe({
       next: () =>{
-        this.user.set(null);
+        this.setUser(null);
         this.router.navigate(['']);
       }
     })
+  }
+
+  setUser(updatedUser: User | null){
+    if(updatedUser){
+      this.user.set({
+      email: updatedUser.email,
+      roles: updatedUser.roles.map(r => r.toLowerCase())
+    })
+    }
+    else{
+      this.user.set(null);
+    }
   }
 }
